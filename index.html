@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="slider-wrapper">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="./images/illu1.jpeg" alt="Slide 1">
+                    <div class="text-content">
+                        <h2>The rise of quantum computing</h2>
+                        <p>Quantum computing, once considered science fiction, is now a tangible reality...</p>
+                        <div class="author">
+                            <img src="./images/profile.webp" alt="Author">
+                            <span>Paul J. Yarnell</span>
+                            <span class="date">24 Feb, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="./images/image2.webp" alt="Slide 2">
+                    <div class="text-content">
+                        <h2>AI: Transforming the Future</h2>
+                        <p>Artificial Intelligence is reshaping industries and redefining possibilities...</p>
+                        <div class="author">
+                            <img src="./images/profile.webp" alt="Author">
+                            <span>Jane Wick</span>
+                            <span class="date">12 Jan, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="./images/image3.jpeg" alt="Slide 3">
+                    <div class="text-content">
+                        <h2>Blockchain Revolution</h2>
+                        <p>Blockchain technology is proving to be more than just a tool for cryptocurrencies...</p>
+                        <div class="author">
+                            <img src="./images/profile.webp" alt="Author">
+                            <span>John Smith</span>
+                            <span class="date">5 March, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
